@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mulher Respeitada</title>
+
+<style>
+
+body{
+font-family:'Segoe UI',sans-serif;
+margin:0;
+background:#fff6fa;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:white;
+border-bottom:2px solid #ffd1e6;
+}
+
+.header-container{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+padding:20px;
+}
+
+.logo{
+position:absolute;
+left:30px;
+font-weight:bold;
+color:#ff4fa3;
+font-size:20px;
+}
+
+.logo span{
+font-size:12px;
+display:block;
+color:#999;
+}
+
+nav a{
+margin:0 20px;
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff4fa3;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(180deg,#fff6fa,#ffffff);
+}
+
+.hero h1{
+color:#ff4fa3;
+}
+
+.hero p{
+margin-bottom:30px;
+color:#666;
+}
+
+/* BOTÕES */
+
+.sos{
+background:#ff2e63;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin:10px;
+}
+
+.stop{
+background:#666;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+margin:10px;
+}
+
+.sos:hover{
+background:#e02455;
+}
+
+.stop:hover{
+background:#444;
+}
+
+/* DENUNCIA */
+
+.denuncia{
+background:white;
+width:60%;
+margin:auto;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border-top:4px solid #ff4fa3;
+}
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+input, select, textarea{
+margin:10px 0;
+padding:12px;
+border-radius:6px;
+border:1px solid #ffd1e6;
+}
+
+textarea{
+height:120px;
+}
+
+form button{
+background:#ff4fa3;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+form button:hover{
+background:#e63e90;
+}
+
+/* APOIO */
+
+.apoio{
+text-align:center;
+padding:60px 20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:220px;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+border-top:4px solid #ff4fa3;
+}
+
+.card h3{
+color:#ff4fa3;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#ff4fa3;
+color:white;
+margin-top:40px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:900px){
+
+.denuncia{
+width:85%;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:80%;
+}
+
+}
+
+@media (max-width:600px){
+
+.header-container{
+flex-direction:column;
+}
+
+.logo{
+position:static;
+margin-bottom:10px;
+text-align:center;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+margin:10px;
+}
+
+.hero{
+padding:40px 20px;
+}
+
+.denuncia{
+width:90%;
+padding:25px;
+}
+
+.sos{
+width:80%;
+}
+
+.stop{
+width:80%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="header-container">
+
+<div class="logo">
+MR
+<span>Mulher Respeitada</span>
+</div>
+
+<nav>
+<a href="#">Início</a>
+<a href="#">Denúncia</a>
+<a href="#">Apoio</a>
+<a href="#">Contato</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Ambiente seguro para denúncias</h1>
+
+<p>Relate situações de assédio ou desrespeito no ambiente de trabalho.</p>
+
+<button class="sos" onclick="ativarSOS()">🚨 BOTÃO SOS</button>
+
+<button class="stop" onclick="pararSOS()">⛔ PARAR ALARME</button>
+
+</section>
+
+<section class="denuncia">
+
+<h2>Registrar denúncia</h2>
+
+<form>
+
+<input type="text" placeholder="Nome (opcional)">
+
+<input type="text" placeholder="Empresa">
+
+<select>
+<option>Tipo de situação</option>
+<option>Assédio Moral</option>
+<option>Assédio Sexual</option>
+<option>Discriminação</option>
+<option>Outro</option>
+</select>
+
+<textarea placeholder="Descreva o ocorrido"></textarea>
+
+<button type="submit">Enviar denúncia</button>
+
+</form>
+
+</section>
+
+<section class="apoio">
+
+<h2>Métodos de Apoio às Mulheres</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Canal de Escuta</h3>
+<p>Espaço seguro para relatar situações e buscar ajuda.</p>
+</div>
+
+<div class="card">
+<h3>Adaptação no Trabalho</h3>
+<p>Políticas de igualdade e segurança para mulheres.</p>
+</div>
+
+<div class="card">
+<h3>Acompanhamento</h3>
+<p>Orientação jurídica e psicológica.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Mulher Respeitada</p>
+
+</footer>
+
+<audio id="alarme" loop>
+<source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg">
+</audio>
+
+<script>
+
+let som = document.getElementById("alarme");
+
+function ativarSOS(){
+
+som.play();
+
+if(navigator.vibrate){
+navigator.vibrate([500,300,500,300,500]);
+}
+
+/* Simulação de envio para administrador */
+
+alert("🚨 SOS enviado para o administrador!");
+
+}
+
+function pararSOS(){
+
+som.pause();
+som.currentTime = 0;
+
+alert("Alarme desativado");
+
+}
+
+</script>
+
+</body>
+</html>
